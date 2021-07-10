@@ -1,6 +1,6 @@
 {
 	"name": "@cylution/eslint-config-nodejs",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "lerna eslint config for nodejs",
 	"author": "0x0a0d <vandug23@gmail.com>",
 	"license": "ISC",
@@ -11,11 +11,11 @@
 	"dependencies": {
 		"eslint": "^7.28.0",
 		"eslint-config-standard": "^16.0.3",
+		"eslint-plugin-eslint-comments": "^3.2.0",
 		"eslint-plugin-import": "^2.23.4",
 		"eslint-plugin-node": "^11.1.0",
 		"eslint-plugin-promise": "^5.1.0",
-		"eslint-plugin-unused-imports": "^1.1.2",
-		"eslint-plugin-eslint-comments": "^3.2.0"
+		"eslint-plugin-unused-imports": "^1.1.2"
 	},
 	"homepage": "https://github.com/cylution-org/eslint-config#readme",
 	"repository": {
