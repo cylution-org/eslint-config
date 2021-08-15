@@ -1,14 +1,14 @@
-# `@cylution/eslint-config-react-native`
+# `@cylution/eslint-config-vue`
 
 ```bash
-yarn add -D eslint @cylution/eslint-config-react-native
+yarn add -D eslint @cylution/eslint-config-vue
 ```
 ## Usage
 
 Edit ``.eslintrc`` or ``.eslintrc.js``
 ```js
 module.exports = {
-  extends: ['@cylution/react-native']
+  extends: ['@cylution/vue']
 }
 ```
 
@@ -16,7 +16,7 @@ Or execute command
 ```bash
 cat > .eslintrc.js <<EOF
 module.exports = {
-  extends: ['@cylution/react-native']
+  extends: ['@cylution/vue']
 }
 EOF
 ```
