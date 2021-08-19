@@ -22,7 +22,7 @@ Modify `.eslintrc.js`
 // .eslintrc.js
 module.exports = {
   parser: '@typescript-eslint/parser',
-  extends: ['@cylution/react-native']
+  extends: ['@cylution/react']
 }
 ```
 
