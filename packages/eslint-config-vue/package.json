@@ -1,6 +1,6 @@
 {
 	"name": "@cylution/eslint-config-vue",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "eslint for vue",
 	"author": "0x0a0d <vandug23@gmail.com>",
 	"keywords": [
@@ -21,17 +21,17 @@
 		"url": "https://github.com/cylution-org/eslint-config/issues"
 	},
 	"dependencies": {
-    "eslint-plugin-vue": "^7.16.0",
 		"eslint-config-standard": "^16.0.2",
 		"eslint-plugin-import": "^2.22.1",
 		"eslint-plugin-node": "^11.1.0",
 		"eslint-plugin-promise": "^4.2.1",
 		"eslint-plugin-unused-imports": "^1.1.1",
+		"eslint-plugin-vue": "^7.16.0",
 		"typescript": "^4.3.4"
 	},
 	"peerDependencies": {
 		"eslint": ">=7",
-    "vue": "^2 || ^3"
+		"vue": "^2 || ^3"
 	},
 	"files": [
 		"index.js"
