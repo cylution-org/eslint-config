@@ -21,6 +21,5 @@ module.exports = {
 EOF
 ```
 
-## Note
-
-If you have `@vue-community/eslint-config` installed, you must remove it from `package.json`, delete `node_modules` and reinstall (run `yarn` or `npm i`)
+### Note
+If you get error message like: `Could not load/find module eslint-blahblah`, please remove `node_modules` and run `npm install` or `yarn` to reinstall packages

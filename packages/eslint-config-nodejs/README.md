@@ -25,3 +25,6 @@ module.exports = {
   ]
 }
 ```
+
+### Note
+If you get error message like: `Could not load/find module eslint-blahblah`, please remove `node_modules` and run `npm install` or `yarn` to reinstall packages
