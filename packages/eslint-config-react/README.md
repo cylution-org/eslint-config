@@ -12,13 +12,18 @@ module.exports = {
 }
 ```
 
-Or execute command
-```bash
-cat > .eslintrc.js <<EOF
+## Extra step for typescript
+> npm i -D @typescript-eslint/parser typescript
+
+> yarn add -D @typescript-eslint/parser typescript
+
+Modify `.eslintrc.js`
+```js
+// .eslintrc.js
 module.exports = {
-  extends: ['@cylution/react']
+  parser: '@typescript-eslint/parser',
+  extends: ['@cylution/react-native']
 }
-EOF
 ```
 
 ### Note
