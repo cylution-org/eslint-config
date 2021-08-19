@@ -21,5 +21,10 @@ module.exports = {
 EOF
 ```
 
+## Extra step for typescript
+> npm i -D @typescript-eslint/parser typescript
+
+> yarn add -D @typescript-eslint/parser typescript
+
 ### Note
 If you get error message like: `Could not load/find module eslint-blahblah`, please remove `node_modules` and run `npm install` or `yarn` to reinstall packages
