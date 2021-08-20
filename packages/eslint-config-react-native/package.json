@@ -1,6 +1,6 @@
 {
 	"name": "@cylution/eslint-config-react-native",
-	"version": "1.0.19-alpha.0",
+	"version": "1.0.19-alpha.1",
 	"description": "eslint for react native",
 	"author": "0x0a0d <vandug23@gmail.com>",
 	"keywords": [
