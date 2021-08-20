@@ -351,7 +351,8 @@ module.exports = {
           'eslint-disable',
           '*package',
           '!',
-          ','
+          ',',
+          '/',
         ]
       }
     ],

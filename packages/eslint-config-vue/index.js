@@ -1,4 +1,8 @@
-const vueVersion = require('vue/package.json').version
+let vueVersion = '2'
+try {
+  // noinspection
+  vueVersion = require('vue/package.json').version
+} catch (e) {}
 
 module.exports = {
   env: {
@@ -327,7 +331,8 @@ module.exports = {
           'eslint-disable',
           '*package',
           '!',
-          ','
+          ',',
+          '/',
         ]
       }
     ],
