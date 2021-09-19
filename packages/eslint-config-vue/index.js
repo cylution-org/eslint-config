@@ -33,7 +33,7 @@ module.exports = {
     'prettier/prettier': 'off',
     'unused-imports/no-unused-imports': 'error',
     'unused-imports/no-unused-vars': [
-      'warn',
+      'off',
       {
         vars: 'all',
         varsIgnorePattern: '^_',

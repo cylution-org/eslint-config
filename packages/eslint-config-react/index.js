@@ -53,7 +53,7 @@ module.exports = {
     ],
     'unused-imports/no-unused-imports': 'error',
     'unused-imports/no-unused-vars': [
-      'warn',
+      'off',
       {
         vars: 'all',
         varsIgnorePattern: '^_',
