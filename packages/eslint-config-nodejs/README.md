@@ -7,6 +7,9 @@
 Edit ``.eslintrc`` or ``.eslintrc.js``
 ```js
 module.exports = {
+  env: {
+    jest: true, // for jest
+  },
   extends: [
     '@cylution/nodejs',
   ]
@@ -14,11 +17,14 @@ module.exports = {
 ```
 
 ## For typescript
-> npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser typescript
+> npm i -D @typescript-eslint/parser typescript
 
 Edit ``.eslintrc`` or ``.eslintrc.js``
 ```js
 module.exports = {
+  env: {
+    jest: true, // for jest
+  },
   parser: '@typescript-eslint/parser',
   extends: [
     '@cylution/nodejs',
