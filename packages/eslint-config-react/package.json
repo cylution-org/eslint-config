@@ -1,6 +1,6 @@
 {
 	"name": "@cylution/eslint-config-react",
-	"version": "1.0.3-alpha.1",
+	"version": "1.0.3",
 	"description": "eslint for react",
 	"author": "0x0a0d <vandug23@gmail.com>",
 	"keywords": [
