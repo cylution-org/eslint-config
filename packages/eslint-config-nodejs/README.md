@@ -16,7 +16,8 @@ module.exports = {
 }
 ```
 
-## For typescript
+## Extra steps for typescript
+### Normal
 > npm i -D @typescript-eslint/parser typescript
 
 Edit ``.eslintrc`` or ``.eslintrc.js``
@@ -32,5 +33,37 @@ module.exports = {
 }
 ```
 
-### Note
+### Typescript recommended
+```bash
+npm i -D typescript \
+  @typescript-eslint/parser \
+  @typescript-eslint/eslint-plugin
+
+# then, if `tsc` not found, open new terminal
+tsc --init
+```
+
+Edit ``.eslintrc`` or ``.eslintrc.js``
+```javascript
+cat > .eslintrc.js <<EOF
+module.exports = {
+  env: {
+    jest: true,
+  },
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint'],
+  extends: [
+    '@cylution/nodejs',
+    'plugin:@typescript-eslint/recommended'
+  ],
+  rules: {
+    '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+  },
+}
+EOF
+```
+
+## Note
 If you get error message like: `Could not load/find module eslint-blahblah`, please remove `node_modules` and run `npm install` or `yarn` to reinstall packages
