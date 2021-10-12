@@ -21,8 +21,14 @@ Modify `.eslintrc.js`
 ```js
 // .eslintrc.js
 module.exports = {
-  parser: '@typescript-eslint/parser',
-  extends: ['@cylution/react']
+  extends: ['@cylution/react'],
+  overrides: [
+    // typescript
+    {
+      files: ['*.ts', '*.tsx'],
+      parser: '@typescript-eslint/parser',
+    },
+  ],
 }
 ```
 

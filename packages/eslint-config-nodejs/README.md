@@ -26,10 +26,16 @@ module.exports = {
   env: {
     jest: true, // for jest
   },
-  parser: '@typescript-eslint/parser',
   extends: [
     '@cylution/nodejs',
-  ]
+  ],
+  overrides: [
+    // typescript
+    {
+      files: ['*.ts', '*.tsx'],
+      parser: '@typescript-eslint/parser',
+    },
+  ],
 }
 ```
 
@@ -50,17 +56,24 @@ module.exports = {
   env: {
     jest: true,
   },
-  parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
   extends: [
     '@cylution/nodejs',
-    'plugin:@typescript-eslint/recommended'
   ],
-  rules: {
-    '@typescript-eslint/ban-ts-comment': 'off',
-    '@typescript-eslint/no-explicit-any': 'off',
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
-  },
+  overrides: [
+    // typescript
+    {
+      files: ['*.ts', '*.tsx'],
+      parser: '@typescript-eslint/parser',
+      plugins: ['@typescript-eslint'],
+      extends: [
+        'plugin:@typescript-eslint/recommended'
+      ],
+      rules: {
+        '@typescript-eslint/ban-ts-comment': 'off',
+        '@typescript-eslint/no-explicit-any': 'off',
+      },
+    },
+  ],
 }
 EOF
 ```
