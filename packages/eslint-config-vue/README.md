@@ -1,7 +1,7 @@
 # `@cylution/eslint-config-vue`
 
 ```bash
-yarn add -D eslint @cylution/eslint-config-vue
+yarn add -D eslint@^7 @cylution/eslint-config-vue
 ```
 ## Usage
 
