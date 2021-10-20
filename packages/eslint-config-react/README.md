@@ -8,7 +8,13 @@ yarn add -D eslint@^7 @cylution/eslint-config-react
 Edit ``.eslintrc`` or ``.eslintrc.js``
 ```js
 module.exports = {
-  extends: ['@cylution/react']
+  extends: ['@cylution/react'],
+  rules: {
+    'react/jsx-closing-bracket-location': [1, {
+      nonEmpty: 'tag-aligned',
+      selfClosing: 'line-aligned',
+    }]
+  },
 }
 ```
 
@@ -27,6 +33,12 @@ module.exports = {
     {
       files: ['*.ts', '*.tsx'],
       parser: '@typescript-eslint/parser',
+      rules: {
+        'react/jsx-closing-bracket-location': [1, {
+          nonEmpty: 'tag-aligned',
+          selfClosing: 'line-aligned',
+        }]
+      },
     },
   ],
 }
