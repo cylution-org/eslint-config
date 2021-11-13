@@ -58,7 +58,7 @@ module.exports = {
         properties: 'always'
       }
     ],
-    'comma-dangle': 'off',
+    'comma-dangle': ['error', 'always-multiline'],
     'comma-spacing': [
       2,
       {
