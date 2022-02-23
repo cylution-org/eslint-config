@@ -10,6 +10,16 @@ module.exports = {
     'eslint:recommended',
     'standard'
   ],
+  overrides: [
+    // jest
+    {
+      files: ['*.spec.[tj]s','*.test.[tj]s'],
+      rules: {
+        // access private prop: cls['prv']
+        'dot-notation': 'off',
+      },
+    },
+  ],
   plugins: [
     'eslint-comments',
     'unused-imports'
