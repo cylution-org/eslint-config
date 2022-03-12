@@ -75,9 +75,35 @@ module.exports = {
           before: false,
           after: true
         }],
+        '@typescript-eslint/member-delimiter-style': ['error', {
+          multiline: {
+            delimiter: 'none',
+            requireLast: false,
+          },
+          singleline: {
+            delimiter: 'comma',
+            requireLast: false,
+          },
+          // overrides: {
+          //   interface: {
+          //     multiline: {
+          //       delimiter: 'none',
+          //       requireLast: false
+          //     }
+          //   }
+          // }
+        }],
+        '@typescript-eslint/dot-notation': ['error', {
+          allowPrivateClassPropertyAccess: true,
+          allowProtectedClassPropertyAccess: true,
+          // allowIndexSignaturePropertyAccess: true,
+        }],
       },
     },
   ],
+  rules: {
+    'dot-notation': 'off',
+  },
 }
 EOF
 ```
