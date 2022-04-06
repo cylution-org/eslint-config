@@ -51,7 +51,8 @@ tsc --init
 
 Edit ``.eslintrc`` or ``.eslintrc.js``
 ```javascript
-cat > .eslintrc.js <<EOF
+/* eslint-env node */
+
 module.exports = {
   env: {
     jest: true,
@@ -99,13 +100,23 @@ module.exports = {
           // allowIndexSignaturePropertyAccess: true,
         }],
       },
+      overrides: [
+        {
+          files: ['*.d.ts'],
+          rules: {
+            'no-use-before-define': 'off',
+            '@typescript-eslint/no-unused-vars': 'off',
+            // '@typescript-eslint/ban-types': 'off',
+            // '@typescript-eslint/adjacent-overload-signatures': 'off',
+          },
+        },
+      ],
     },
   ],
   rules: {
     'dot-notation': 'off',
   },
 }
-EOF
 ```
 
 ## Note
