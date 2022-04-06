@@ -1,6 +1,6 @@
 {
   "name": "@cylution/eslint-config-vue3",
-  "version": "1.0.1-2",
+  "version": "1.0.1-3",
   "description": "eslint for vue3",
   "author": "0x0a0d <vandug23@gmail.com>",
   "keywords": [
