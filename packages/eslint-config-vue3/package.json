@@ -1,6 +1,6 @@
 {
   "name": "@cylution/eslint-config-vue3",
-  "version": "1.0.0",
+  "version": "1.0.1-2",
   "description": "eslint for vue3",
   "author": "0x0a0d <vandug23@gmail.com>",
   "keywords": [
@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@rushstack/eslint-patch": "^1.1.1",
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
     "@typescript-eslint/parser": "^5.18.0",
     "@vue/eslint-config-typescript": "^10.0.0",
     "eslint": "^8.12.0",

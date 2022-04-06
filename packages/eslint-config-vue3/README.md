@@ -1,31 +1,44 @@
 # `@cylution/eslint-config-vue3`
 
+## install
 ```bash
-npm i -D eslint @cylution/eslint-config-vue3
+npm i -D  eslint typescript \
+          @cylution/eslint-config-vue3 \
+          @vue/eslint-config-typescript \
+          @typescript-eslint/eslint-plugin \
+          @typescript-eslint/parser
 ```
-### Typescript
-> npm i -D typescript @vue/eslint-config-typescript
 
 ## Usage
 
 Edit ``.eslintrc`` or ``.eslintrc.js``
 ```js
+/* eslint-env node */
+
 module.exports = {
   root: true,
   extends: ['@cylution/vue3'],
+  parser: 'vue-eslint-parser',
   env: {
     "vue/setup-compiler-macros": true,
+  },
+  rules: {
+    // 'dot-notation': 'off',
   },
   overrides: [
     // typescript
     {
       files: ['*.ts', '*.tsx'],
+      plugins: ['@typescript-eslint'],
+      extends: [
+        'plugin:@typescript-eslint/recommended',
+      ],
       rules: {
         '@typescript-eslint/ban-ts-comment': 'off',
         '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/type-annotation-spacing': ['warn', {
           before: false,
-          after: true
+          after: true,
         }],
         '@typescript-eslint/member-delimiter-style': ['error', {
           multiline: {
@@ -45,11 +58,6 @@ module.exports = {
           //   }
           // }
         }],
-        '@typescript-eslint/dot-notation': ['error', {
-          allowPrivateClassPropertyAccess: true,
-          allowProtectedClassPropertyAccess: true,
-          // allowIndexSignaturePropertyAccess: true,
-        }],
       },
       overrides: [
         {
@@ -62,13 +70,6 @@ module.exports = {
           },
         },
       ],
-    },
-    {
-      files: ['*.vue'],
-      parser: 'vue-eslint-parser',
-      extends: [
-        'plugin:@vue/typescript'
-      ]
     },
   ],
 }
