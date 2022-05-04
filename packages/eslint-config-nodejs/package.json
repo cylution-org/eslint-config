@@ -1,6 +1,6 @@
 {
 	"name": "@cylution/eslint-config-nodejs",
-	"version": "1.0.15",
+	"version": "2.0.0-alpha.0",
 	"description": "lerna eslint config for nodejs",
 	"author": "0x0a0d <vandug23@gmail.com>",
 	"license": "ISC",
