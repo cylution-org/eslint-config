@@ -2,8 +2,8 @@
   "name": "root",
   "private": true,
   "devDependencies": {
-    "@cylution/eslint-config-nodejs": "^1.0.12",
-    "eslint": "^7.32.0"
+    "@cylution/eslint-config-nodejs": "file:./packages/eslint-config-nodejs",
+    "eslint": "^8"
   },
   "bin": {
     "sort-rule": "bin/sort-rule.js"

@@ -1,6 +1,6 @@
 # `@cylution/eslint-config-nodejs`
 
-> npm i -D eslint@^7 @cylution/eslint-config-nodejs
+> npm i -D eslint@^8 @cylution/eslint-config-nodejs
 
 ## Usage
 
@@ -18,7 +18,7 @@ module.exports = {
 
 ## Extra steps for typescript
 ### Normal
-> npm i -D @typescript-eslint/parser@^4 typescript
+> npm i -D @typescript-eslint/parser typescript
 
 Edit ``.eslintrc`` or ``.eslintrc.js``
 ```js
@@ -42,8 +42,8 @@ module.exports = {
 ### Typescript recommended
 ```bash
 npm i -D typescript \
-  @typescript-eslint/parser@^4 \
-  @typescript-eslint/eslint-plugin@^4
+  @typescript-eslint/parser \
+  @typescript-eslint/eslint-plugin
 
 # then, if `tsc` not found, open new terminal
 tsc --init
