@@ -1,7 +1,7 @@
 # `@cylution/eslint-config-react-native`
 
 ```bash
-yarn add -D eslint@^7 @cylution/eslint-config-react-native
+yarn add -D eslint @cylution/eslint-config-react-native
 ```
 ## Usage
 
@@ -19,9 +19,9 @@ module.exports = {
 ```
 
 ## Extra step for typescript
-> npm i -D @typescript-eslint/parser@^4 typescript
+> npm i -D @typescript-eslint/parser typescript
 
-> yarn add -D @typescript-eslint/parser@^4 typescript
+> yarn add -D @typescript-eslint/parser typescript
 
 Modify `.eslintrc.js`
 ```js

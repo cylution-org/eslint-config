@@ -13,7 +13,7 @@
 		"eslint-config-standard": "^17",
 		"eslint-plugin-eslint-comments": "^3",
 		"eslint-plugin-import": "^2",
-		"eslint-plugin-node": "^11",
+		"eslint-plugin-n": "^15.2.4",
 		"eslint-plugin-promise": "^6",
 		"eslint-plugin-unused-imports": "^2"
 	},
