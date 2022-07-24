@@ -5,6 +5,9 @@
     "@cylution/eslint-config-nodejs": "file:./packages/eslint-config-nodejs",
     "eslint": "^8"
   },
+  "optionalDependencies": {
+    "lerna": "^4.0.0"
+  },
   "bin": {
     "sort-rule": "bin/sort-rule.js"
   }
