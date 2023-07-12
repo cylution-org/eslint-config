@@ -15,7 +15,7 @@
 		"eslint-plugin-import": "^2",
 		"eslint-plugin-n": "^15.2.4",
 		"eslint-plugin-promise": "^6",
-		"eslint-plugin-unused-imports": "^2"
+		"eslint-plugin-unused-imports": "^3"
 	},
 	"homepage": "https://github.com/cylution-org/eslint-config#readme",
 	"repository": {
