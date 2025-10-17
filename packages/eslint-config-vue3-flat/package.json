@@ -1,0 +1,41 @@
+{
+  "name": "@cylution/eslint-config-vue3-flat",
+  "version": "1.0.0",
+  "description": "eslint flat config for vue3",
+  "keywords": [
+    "eslint",
+    "vue"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/cylution-org/eslint-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cylution-org/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cylution-org/eslint-config/issues"
+  },
+  "peerDependencies": {
+    "vue": "^3"
+  },
+  "dependencies": {
+    "eslint": "^9",
+    "@eslint/js": "^9",
+    "eslint-plugin-vue": "^10",
+    "vue-eslint-parser": "^10",
+    "@typescript-eslint/eslint-plugin": "^8",
+    "@typescript-eslint/parser": "^8",
+    "eslint-plugin-unused-imports": "^4",
+    "typescript": "^5"
+  },
+  "devDependencies": {
+    "@types/node": "^22"
+  },
+  "files": [
+    "index.js"
+  ]
+}
